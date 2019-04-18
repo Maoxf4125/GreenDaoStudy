@@ -25,10 +25,10 @@ public class Test {
     }
 
     private static void init(){
-        User mao = new User(3, "Maoxf", "M", 2);
-        User zhong = new User(4, "Zhongch", "M", 2);
-        User yang = new User(1, "Yangxr", "W", 1);
-        User chen = new User(2, "Chenyy", "M", 2);
+        User mao = new User(null, "Maoxf", "M", 2);
+        User zhong = new User(null, "Zhongch", "M", 2);
+        User yang = new User(null, "Yangxr", "W", 1);
+        User chen = new User(null, "Chenyy", "M", 2);
         users.add(mao);
         users.add(zhong);
         users.add(yang);

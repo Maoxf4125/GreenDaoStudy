@@ -41,8 +41,8 @@ public class DaoManage {
      */
     public DaoMaster getDaoMaster(){
         if(sDaoMaster == null) {
-            DaoMaster.DevOpenHelper helper = new DaoMaster.DevOpenHelper(context, DB_NAME, null);
-            sDaoMaster = new DaoMaster(helper.getWritableDatabase());
+            sHelper = new DaoMaster.DevOpenHelper(context, DB_NAME, null);
+            sDaoMaster = new DaoMaster(sHelper.getWritableDatabase());
         }
 
         return sDaoMaster;

@@ -8,13 +8,13 @@ import org.greenrobot.greendao.annotation.Generated;
 public class User {
 
     @Id(autoincrement = true)
-    private long id;
+    private Long id;
 
     private String name;
     private String sex;
     private int level;
-    @Generated(hash = 1519728815)
-    public User(long id, String name, String sex, int level) {
+    @Generated(hash = 2030036953)
+    public User(Long id, String name, String sex, int level) {
         this.id = id;
         this.name = name;
         this.sex = sex;
@@ -46,6 +46,9 @@ public class User {
     }
     public void setLevel(int level) {
         this.level = level;
+    }
+    public void setId(Long id) {
+        this.id = id;
     }
 
 }
